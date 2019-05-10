@@ -29,8 +29,21 @@ In this challenge, you will create a Single Page Application complete with Clien
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Explain the differences between `client-side routing` and `server-side routing`.
+
+Client-side routing gives more of an app-feeling, with little to no load time in between pages; however, there is a heavy initial load when first starting up the application.
+
+Server-side routing is when the client is sent an entire html file whenever they navigate to another page.
+
 - [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+.post - Creating a new item in the database, or "Create" for the C in CRUD.
+.get - The initial fetch, or "Read" for the R in CRUD.
+.put - Updating an already existing item in the database, or "Update" for the U in CRUD.
+.delete - Deleting something in the database, or "Delete" for the D in CRUD.
+
 - [ ] Mention three tools we can use to make AJAX requests.
+
+I'm not actually entirely sure about this one. The tools I can recall we used for making AJAX requests are the fetch api and the axios library.
 
 
 ## Project Set Up
