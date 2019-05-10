@@ -6,6 +6,24 @@ import SmurfForm from "./components/SmurfForm";
 import Smurfs from "./components/Smurfs";
 
 import "./App.css";
+import styled from "styled-components";
+
+// CSS Styled Components
+
+const StlyedNav = styled.nav`
+  display: flex;
+  // border: 1px solid red;
+
+  a {
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+  }
+
+  .active {
+    color: red;
+  }
+`;
 
 class App extends Component {
   constructor(props) {
@@ -42,12 +60,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <nav>
+        <StlyedNav>
           <NavLink exact to="/">
             Home
           </NavLink>
-          <NavLink to="/add">Add a Smurf</NavLink>
-        </nav>
+          <NavLink to="/smurf-form">Add a Smurf</NavLink>
+        </StlyedNav>
 
         <Route
           exact
@@ -57,7 +75,7 @@ class App extends Component {
 
         <Route
           exact
-          path="/add"
+          path="/smurf-form"
           render={props => <SmurfForm {...props} addSmurf={this.addSmurf} />}
         />
       </div>
